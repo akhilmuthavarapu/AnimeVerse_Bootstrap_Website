@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign Up | AnimeVerse</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .navbar-brand:hover{
+      color:aqua;
+    }
+    body {
+      background: linear-gradient(to right, #360033, #0b8793);
+      min-height: 100vh;
+      display: inline;
+      align-items: center;
+      justify-content: center;
+      height: 1500PX;
+    }
+    .signup-card {
+      background-color: #1f1f1f;
+      border-radius: 16px;
+      padding: 2rem;
+      color: #fff;
+      width: 100%;
+      max-width: 450px;
+      margin-top: 40px;
+      margin-left: 570px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    }
+    .signup-card:hover{
+      border: 5px solid cyan;
+    }
+    .signup-card input {
+      background-color: #2c2c2c;
+      border: none;
+      color: #fff;
+    }
+    .signup-card input:focus {
+      border-color: #ff7eb9;
+      box-shadow: 0 0 0 0.2rem rgba(255, 126, 185, 0.3);
+    }
+    .btn-signup {
+      background-color: #ff7eb9;
+      border: none;
+    }
+    .btn-signup:hover {
+      background-color: #ff5eab;
+    }
+  </style>
+</head>
+<body><nav class="navbar navbar-expand-lg navbar-dark bg-dark px-3">
+  <a class="navbar-brand" href="#">AnimeVerse</a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#animeNavbar"
+    aria-controls="animeNavbar"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="animeNavbar">
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Latest_Releases.html">Latest Releases</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="POPULAR.html">Popular</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link dropdown-toggle"
+          href="POPULAR.html"
+          id="genresDropdown"
+          role="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Genres
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="genresDropdown">
+          <li><a class="dropdown-item" href="POPULAR.html#action">Action</a></li>
+          <li><a class="dropdown-item" href="POPULAR.html#fantasy">Fantasy</a></li>
+          <li><a class="dropdown-item" href="POPULAR.html#horror">Horror</a></li>
+          <li><a class="dropdown-item" href="POPULAR.html#comedy">Comedy</a></li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+    </ul>
+    <form class="d-flex me-3" role="search">
+      <input
+        class="form-control me-2"
+        type="search"
+        placeholder="Search Anime"
+        aria-label="Search"
+      />
+      <button class="btn btn-outline-light" type="submit">Search</button>
+    </form>
+    <div>
+      <a class="btn btn-outline-light me-2" href="login.html">Login</a>
+      <a class="btn btn-primary" href="signup.html">Sign Up</a>
+    </div>
+  </div>
+</nav>
+
+  <div class="signup-card">
+    <h2 class="text-center mb-4">Create Your AnimeVerse Account</h2>
+    <form>
+      <div class="mb-3">
+        <label for="name" class="form-label">Full Name</label>
+        <input type="text" class="form-control" id="name" placeholder="John Doe" required />
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="email" placeholder="you@example.com" required />
+      </div>
+      <div class="mb-3">
+        <label for="username" class="form-label">Username</label>
+        <input type="text" class="form-control" id="username" placeholder="animefan123" required />
+      </div>
+      <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" class="form-control" id="password" placeholder="Create a password" required />
+      </div>
+      <div class="mb-3">
+        <label for="confirm" class="form-label">Confirm Password</label>
+        <input type="password" class="form-control" id="confirm" placeholder="Repeat your password" required />
+      </div>
+      <button type="submit" class="btn btn-signup w-100">Sign Up</button>
+      <p class="text-center mt-3">
+        Already have an account? <a href="login.html" class="text-info">Login</a>
+      </p>
+    </form>
+  </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

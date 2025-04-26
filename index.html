@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AnimeVerse</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <style>
+    .navbar-brand:hover{
+      color:aqua;
+      
+    }
+    .carousel-caption {
+      background-color: rgba(0, 0, 0, 0.5);
+      
+      border-radius: 10px;
+    }
+    .carousel-item {
+        height: 800px;
+    }
+    .card-body:hover{
+      box-shadow: 5px 5px 5px 5px greenyellow;
+      border:5px solid ghostwhite;
+      
+    }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+    
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark px-3">
+  <a class="navbar-brand" href="#">AnimeVerse</a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#animeNavbar"
+    aria-controls="animeNavbar"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="animeNavbar">
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Latest_Releases.html">Latest Releases</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="POPULAR.html">Popular</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link dropdown-toggle"
+          href="POPULAR.html"
+          id="genresDropdown"
+          role="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Genres
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="genresDropdown">
+          <li><a class="dropdown-item" href="POPULAR.html#action">Action</a></li>
+          <li><a class="dropdown-item" href="POPULAR.html#fantasy">Fantasy</a></li>
+          <li><a class="dropdown-item" href="POPULAR.html#horror">Horror</a></li>
+          <li><a class="dropdown-item" href="POPULAR.html#comedy">Comedy</a></li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+    </ul>
+    <form class="d-flex me-3" role="search">
+      <input
+        class="form-control me-2"
+        type="search"
+        placeholder="Search Anime"
+        aria-label="Search"
+      />
+      <button class="btn btn-outline-light" type="submit">Search</button>
+    </form>
+    <div>
+      <a class="btn btn-outline-light me-2" href="login.html">Login</a>
+      <a class="btn btn-primary" href="signup.html">Sign Up</a>
+    </div>
+  </div>
+</nav>
+<div id="animeCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#animeCarousel" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#animeCarousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#animeCarousel" data-bs-slide-to="2"></button>
+    </div>
+  
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://i.pinimg.com/originals/10/5a/fd/105afda588d9fad6fcceaef564f5eef7.gif" class="d-block w-100" alt="Naruto Live Wallpaper" />
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Naruto: Rise of a Hero</h5>
+          <p>Watch the legendary journey unfold now!</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://media1.tenor.com/images/c530f57b20718d1701776515a177b9f9/tenor.gif?itemid=16160972" class="d-block w-100" alt="Demon Slayer" />
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Demon Slayer</h5>
+          <p>Prepare for intense battles and breathtaking animation.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://media1.tenor.com/m/cLW_qE5otbsAAAAd/solo-leveling-ore-dake-level-up-na-ken.gif" class="d-block w-100" alt="Jujutsu Kaisen" />
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Solo Leveling</h5>
+          <p> Epic fights, and cursed energy.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://media1.tenor.com/images/c530f57b20718d1701776515a177b9f9/tenor.gif?itemid=16160972" class="d-block w-100" alt="Demon Slayer" />
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Demon Slayer</h5>
+          <p>Prepare for intense battles and breathtaking animation.</p>
+        </div>
+      </div>
+    </div>
+  
+    <button class="carousel-control-prev" type="button" data-bs-target="#animeCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#animeCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <section class="py-5 bg-black text-light">
+    <div class="container">
+      <h2 class="mb-4 text-center">Featured Anime</h2>
+      <div class="row g-4">
+  
+        <!-- Anime Card 1 -->
+        <div class="col-md-6 col-lg-4">
+          <a href="POPULAR.html">
+          <div class="card text-light h-100" style="background: linear-gradient(to right, #ff758c, #ff7eb3);">
+            <div class="card-body">
+              <h5 class="card-title">Naruto</h5>
+              <p class="card-text">A young ninja strives to become the Hokage of his village.</p>
+            </div>
+          </div>
+        </a>
+        </div>
+  
+        <!-- Anime Card 2 -->
+        <div class="col-md-6 col-lg-4">
+          <a href="POPULAR.html">
+          <div class="card text-light h-100" style="background: linear-gradient(to right, #1e3c72, #2a5298);">
+            <div class="card-body">
+              <h5 class="card-title">Attack on Titan</h5>
+              <p class="card-text">Humanity fights for survival against man-eating titans.</p>
+            </div>
+          </div>
+        </a>
+        </div>
+  
+        <!-- Anime Card 3 -->
+        <div class="col-md-6 col-lg-4">
+          <a href="POPULAR.html">
+          <div class="card text-light h-100" style="background: linear-gradient(to right, #00c6ff, #0072ff);">
+            <div class="card-body">
+              <h5 class="card-title">One Piece</h5>
+              <p class="card-text">Luffy and his crew search for the ultimate treasure, the One Piece.</p>
+            </div>
+          </div>
+          </a>
+        </div>
+  
+        <!-- Anime Card 4 -->
+        <div class="col-md-6 col-lg-4">
+          <a href="POPULAR.html"></a>
+          <div class="card text-light h-100" style="background: linear-gradient(to right, #f953c6, #b91d73);">
+            <div class="card-body">
+              <h5 class="card-title">Demon Slayer</h5>
+              <p class="card-text">A young swordsman fights demons to save his sister.</p>
+            </div>
+          </div>
+        </a>
+        </div>
+  
+        <!-- Anime Card 5 -->
+        <div class="col-md-6 col-lg-4">
+          <a href="POPULAR.html">
+          <div class="card text-light h-100" style="background: linear-gradient(to right, #fc00ff, #00dbde);">
+            <div class="card-body">
+              <h5 class="card-title">Jujutsu Kaisen</h5>
+              <p class="card-text">Cursed spirits and fierce battles in the world of sorcery.</p>
+            </div>
+          </div>
+          </a>
+        </div>
+  
+        <!-- Anime Card 6 -->
+        <div class="col-md-6 col-lg-4">
+          <a href="POPULAR.html">
+          <div class="card text-light h-100" style="background: linear-gradient(to right, #00b09b, #96c93d);">
+            <div class="card-body">
+              <h5 class="card-title">Tokyo Revengers</h5>
+              <p class="card-text">A man travels back in time to save his girlfriend from a gang's fate.</p>
+            </div>
+          </div>
+          </a>
+        </div>
+  
+        <!-- Anime Card 7 -->
+        <div class="col-md-6 col-lg-4">
+          <a href="POPULAR.html">
+          <div class="card text-light h-100" style="background: linear-gradient(to right, #8e2de2, #4a00e0);">
+            <div class="card-body">
+              <h5 class="card-title">Bleach</h5>
+              <p class="card-text">A soul reaper battles evil spirits to protect the living world.</p>
+            </div>
+          </div>
+        </a>
+        </div>
+  
+        <!-- Anime Card 8 -->
+        <div class="col-md-6 col-lg-4">
+          <a href="POPULAR.html">
+          <div class="card text-light h-100" style="background: linear-gradient(to right, #f7971e, #ffd200);">
+            <div class="card-body">
+              <h5 class="card-title">My Hero Academia</h5>
+              <p class="card-text">A boy born without powers trains to become the greatest hero.</p>
+            </div>
+          </div>
+          </a>
+        </div>
+  
+        <!-- Anime Card 9 -->
+        <div class="col-md-6 col-lg-4">
+          <a href="POPULAR.html">
+          <div class="card text-light h-100" style="background: linear-gradient(to right, #ed213a, #93291e);">
+            <div class="card-body">
+              <h5 class="card-title">Chainsaw Man</h5>
+              <p class="card-text">A devil hunter merges with a chainsaw demon for revenge.</p>
+            </div>
+          </div>
+          </a>
+        </div>
+  
+        <!-- Anime Card 10 -->
+        <div class="col-md-6 col-lg-4">
+          <a href="POPULAR.html">
+          <div class="card text-light h-100" style="background: linear-gradient(to right, #0f2027, #203a43, #2c5364);">
+            <div class="card-body">
+              <h5 class="card-title">Death Note</h5>
+              <p class="card-text">A high school student gains a notebook that kills anyone whose name is written in it.</p>
+            </div>
+          </div>
+          </a>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
+  
+  <footer class="bg-dark text-light pt-5 pb-3">
+    <div class="container">
+      <div class="row">
+        <!-- About -->
+        <div class="col-md-4 mb-3">
+          <h5>About AnimeVerse</h5>
+          <p>
+            Your ultimate destination for streaming and discovering the best anime web series. Stay updated with the latest episodes and enjoy classic titles anytime.
+          </p>
+        </div>
+  
+        <!-- Quick Links -->
+        <div class="col-md-4 mb-3">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="text-decoration-none text-light">Home</a></li>
+            <li><a href="Latest_Releases.html" class="text-decoration-none text-light">Latest Releases</a></li>
+            <li><a href="POPULAR.html" class="text-decoration-none text-light">Genres</a></li>
+            <li><a href="contact.html" class="text-decoration-none text-light">Contact</a></li>
+          </ul>
+        </div>
+  
+        <!-- Follow Us -->
+        <div class="col-md-4 mb-3">
+          <h5>Follow Us</h5>
+          
+          <a href="https://x.com/MVENKATAAKHIL" class="text-light me-3"><i class="bi bi-twitter"></i></a>
+          <a href="https://www.instagram.com/sungjinwoo7556/" class="text-light me-3"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/venkata-akhil-muthavarapu-12042424a/" class="text-light me-3"><i class="bi bi-linkedin"></i></a>
+          <br /><br />
+          <form>
+            <label for="newsletter" class="form-label">Subscribe for Updates</label>
+            <div class="input-group">
+              <input type="email" class="form-control" placeholder="Email address" id="newsletter" />
+              <button class="btn btn-primary" type="submit">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+  
+      <hr class="bg-light" />
+      <div class="text-center">
+        <p class="mb-0">© 2025 AnimeVerse. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
